@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id='root'></div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script>
+    // $('#root').text('Hello jQuery!')
+    $('#root').remove()
+    console.log($('#root'))
+    console.log($('#root').length === 0 ? 'Empty' : 'Not Empty')
+    // https://jsonplaceholder.typicode.com/todos
+    // https://www.itbox.ua/api/v1/categories/Holodilniki-c7874/view=table;filter=1-00010000000
+    /* fetch('https://jsonplaceholder.typicode.com/todos',
+    {
+      'method':'get'
+    })
+    // Выполнить, когда результат запроса на сервер будет получен
+      .then((response) => {
+        console.log(response)
+        return response.json()
+      })
+      // Выполнить, когда тело ответа от сервера (в формате json) будет превращено
+      // в объект
+      .then((data) => {
+        console.log(data)
+      })
+      .catch((error) => {
+        console.log(error)
+      }) */
+    // console.log('Begin')
+    /* setTimeout(() => {
+      console.log('Async Actions...')
+    }, 5000) */
+    /* setTimeout(() => {
+      console.log('Async Actions...')
+    }, 0)
+    const intervalHandler = setInterval(() => {
+      console.log('tic')
+    }, 5000)
+    setTimeout(() => {
+      clearInterval(intervalHandler)
+    }, 15000)
+    console.log('Waiting for result...') */
+  </script>
+</body>
+</html>
